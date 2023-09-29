@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-        <form action=""class="form" id="button" style="border: 3px solid black;">
-            <input type="text"id="login" placeholder=""> Type your login
-            <label for="ИМЯ"></label><br>
-            <hr>
-            <input type="number"id="login" placeholder=""> Type your password
-            <label for="Phone"></label><br>
-            <hr>
-            <input type="text"id="email" placeholder=""> Type your email
-            <label for="text"></label><br>
-            <hr>
-            <button>Submit</button>
-        </form>
     
-    <script src="./main.js"></script>
+
+    <form class="form" id="form" >
+        <input name="search_query" type="text" id="login" > 
+        <label for="login">Type your Login</label>
+        <hr>
+        <input type="password" id="password"> 
+        <label for="password">Type your password</label>
+        <hr>
+        <input type="email" id="email"> 
+        <label for="email">Type your email</label>
+        <div id="mistake"></div>
+        <hr>
+        <button id="button"> <b>Submit</b> </button>
+        
+    </form>
+
+    <script src="main.js"></script>
 </body>
 </html>
